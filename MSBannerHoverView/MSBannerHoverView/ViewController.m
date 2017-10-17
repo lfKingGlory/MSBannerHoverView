@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MSHomeView.h"
+#import <WebKit/WebKit.h>
 
 @interface ViewController ()<UITableViewDataSource>
 @property (strong, nonatomic) UITableView *scrollView;
@@ -41,7 +42,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"fwefkklw"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     return cell;
 }
 

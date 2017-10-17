@@ -45,7 +45,7 @@
     
     CGFloat distance = -self.hoverHeight - startChangeOffsetY;
     CGFloat percent = (newOffset.y - startChangeOffsetY) / distance;
-    
+
     if (1.0 - percent > EPS && percent - 0.0 > EPS) {
         self.isBottom = NO;
         self.isTop = NO;

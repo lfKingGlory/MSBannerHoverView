@@ -17,6 +17,7 @@
 		6A7B73601F305362003CB4C3 /* MSBannerHoverViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B735F1F305362003CB4C3 /* MSBannerHoverViewUITests.m */; };
 		6A7B73701F305500003CB4C3 /* MSBannerHoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B736F1F305500003CB4C3 /* MSBannerHoverView.m */; };
 		6A7B73731F305FC1003CB4C3 /* MSHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B73721F305FC1003CB4C3 /* MSHomeView.m */; };
+		6A9A1D031F3D814900BBEA39 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9A1D021F3D814900BBEA39 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6A7B736F1F305500003CB4C3 /* MSBannerHoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBannerHoverView.m; sourceTree = "<group>"; };
 		6A7B73711F305FC1003CB4C3 /* MSHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHomeView.h; sourceTree = "<group>"; };
 		6A7B73721F305FC1003CB4C3 /* MSHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHomeView.m; sourceTree = "<group>"; };
+		6A9A1D021F3D814900BBEA39 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9A1D031F3D814900BBEA39 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +95,7 @@
 				6A7B73531F305362003CB4C3 /* MSBannerHoverViewTests */,
 				6A7B735E1F305362003CB4C3 /* MSBannerHoverViewUITests */,
 				6A7B73381F305362003CB4C3 /* Products */,
+				6A9A1D011F3D814900BBEA39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +160,14 @@
 				6A7B736F1F305500003CB4C3 /* MSBannerHoverView.m */,
 			);
 			name = BannerHoverView;
+			sourceTree = "<group>";
+		};
+		6A9A1D011F3D814900BBEA39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A9A1D021F3D814900BBEA39 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +237,7 @@
 				TargetAttributes = {
 					6A7B73361F305362003CB4C3 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4XQJVX2W6F;
+						DevelopmentTeam = 7NC535VVH6;
 						ProvisioningStyle = Automatic;
 					};
 					6A7B734F1F305362003CB4C3 = {
@@ -447,11 +459,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4XQJVX2W6F;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7NC535VVH6;
 				INFOPLIST_FILE = MSBannerHoverView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = geg.MSBannerHoverView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -459,11 +473,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4XQJVX2W6F;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7NC535VVH6;
 				INFOPLIST_FILE = MSBannerHoverView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = geg.MSBannerHoverView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -536,6 +552,7 @@
 				6A7B73661F305362003CB4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A7B73671F305362003CB4C3 /* Build configuration list for PBXNativeTarget "MSBannerHoverViewTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +561,7 @@
 				6A7B73691F305362003CB4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A7B736A1F305362003CB4C3 /* Build configuration list for PBXNativeTarget "MSBannerHoverViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +570,7 @@
 				6A7B736C1F305362003CB4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

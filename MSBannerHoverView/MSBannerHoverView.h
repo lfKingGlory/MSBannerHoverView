@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MSBannerHoverView : UIView
-@property (strong, nonatomic) UIScrollView *headerScrollView;
+@property (weak, nonatomic) UIScrollView *headerScrollView;
 /** 悬停高度 */
 @property (assign, nonatomic) CGFloat hoverHeight;
 @property (assign, nonatomic) BOOL isBottom;
